@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 35ec5ed4e8a7f7477a6583a8de9a70256d4192a2
+  branch: master
+  specs:
+    faker (2.13.0)
+      i18n (>= 1.6, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -142,6 +150,11 @@ GEM
       ffi (~> 1.0)
     regexp_parser (1.7.1)
     rubyzip (2.3.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -155,6 +168,8 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    semantic-ui-sass (2.4.2.0)
+      sass (>= 3.2)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -201,6 +216,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  faker!
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
@@ -208,6 +224,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.2)
   sass-rails (>= 6)
   selenium-webdriver
+  semantic-ui-sass
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
