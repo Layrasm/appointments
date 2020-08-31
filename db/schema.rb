@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_08_28_075017) do
   enable_extension "plpgsql"
 
   create_table "appointments", force: :cascade do |t|
-    t.string "type"
+    t.string "details"
     t.bigint "patient_id", null: false
     t.bigint "doctor_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_08_28_075017) do
   create_table "doctors", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
+    t.string "specialty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -35,6 +36,8 @@ ActiveRecord::Schema.define(version: 2020_08_28_075017) do
   create_table "patients", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
+    t.string "condition"
+    t.string "insurance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
